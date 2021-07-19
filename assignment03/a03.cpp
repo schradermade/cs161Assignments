@@ -1,7 +1,7 @@
 //**********************************************************************
 // Author:		    Nathan Schrader
 // Assignment:	  #03 - Jelly Bean Stats
-// Date:		      June 14th, 2021
+// Date:		      July 14th, 2021
 // Description:	  Create stats from Jelly bean Program (assignment #1)
 // Input:		      Jelly bean length, height, jar volume
 // Output:		  //Number of jelly beans that will fit in jar
