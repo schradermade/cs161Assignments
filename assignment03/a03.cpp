@@ -1,10 +1,14 @@
 //**********************************************************************
 // Author:		    Nathan Schrader
-// Assignment:	  #1 - bean_count
-// Date:		      June 25th, 2021
-// Description:	  Calculate number of jelly beans that will fit in a jar
+// Assignment:	  #03 - Jelly Bean Stats
+// Date:		      June 14th, 2021
+// Description:	  Create stats from Jelly bean Program (assignment #1)
 // Input:		      Jelly bean length, height, jar volume
-// Output:		    Number of jelly beans that will fit in jar
+// Output:		  //Number of jelly beans that will fit in jar
+                //Total entries
+                //Avg number of beans
+                //Bean size for the largest jelly bean estimate
+                //Jar size for the largest jelly bean estimate
 // Sources:		    None
 //**********************************************************************
 
