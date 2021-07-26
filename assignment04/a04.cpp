@@ -13,6 +13,7 @@
 //**********************************************************************
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
   const double PI = 3.14159265358979323846;
@@ -95,6 +96,7 @@ void doLoop(double volumeOfSingleBean) {
   avgBeans = totalBeans / entries;
 
   cout << endl;
+  cout << fixed << setprecision(2);
   cout << "Total number of entries: " << entries << endl;
   cout << "Average number of beans: " << avgBeans << endl;
   cout << "Bean size for the largest jelly bean estimate: "
