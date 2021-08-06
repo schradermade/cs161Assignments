@@ -12,75 +12,76 @@ using namespace std;
 const int CAP = 20;
 
 //function prototypes
-void readData(string names[], double scores[], int& size);
+void readData(string names[], double scores[], int &size);
 void printData(string names[], double scores[], int size);
-void insertData(string names[], double scores[], int& size);
+void insertData(string names[], double scores[], int &size);
 
 //your function prototype goes here.
 
 //main
 int main()
 {
-	string names[CAP];
-	double scores[CAP] = { 0 };
-	int size = 0;
+  string names[CAP];
+  double scores[CAP] = {0};
+  int size = 0;
 
-	//call the readData function
-	readData(names, scores, size);
-	//print the data
-	printData(names, scores, size);
-	//Your function call to insert goes here.
-	//insert data
-	insertData(names, scores, size);
-	//Then call the print function again to print the list.
-	printData(names, scores, size);
-	return 0;
+  //call the readData function
+  readData(names, scores, size);
+  //print the data
+  printData(names, scores, size);
+  //Your function call to insert goes here.
+  //insert data
+  insertData(names, scores, size);
+  //Then call the print function again to print the list.
+  printData(names, scores, size);
+  return 0;
 }
-
-
 
 //description:	just populates the array.
 //params:		string array, double array, int size
 //return:		none
 //output:		none
-void readData(string names[], double scores[], int& size)
+void readData(string names[], double scores[], int &size)
 {
-	names[0] = "Amy Goyal";
-	scores[0] = 95.4;
-	names[1] = "Priya Sekar";
-	scores[1] = 95.5;
-	names[2] = "Rama Noel";
-	scores[2] = 78.6;
-	size = 3;
+  names[0] = "Amy Goyal";
+  scores[0] = 95.4;
+  names[1] = "Priya Sekar";
+  scores[1] = 95.5;
+  names[2] = "Rama Noel";
+  scores[2] = 78.6;
+  size = 3;
 }
 
-void insertData(string names[], double scores[], int& size) {
-	string name = "";
-	double score = 0;
-	int position = 0;
+void insertData(string names[], double scores[], int &size)
+{
+  string name = "";
+  double score = 0;
+  int position = 0;
 
-	cout << "Name: ";
-	cin >> name;
+  cout << "Name: ";
+  cin >> name;
 
-	cout << "Score: ";
-	cin >> score;
+  cout << "Score: ";
+  cin >> score;
 
-	cout << "Position: ";
-	cin >> position;
+  cout << "Position: ";
+  cin >> position;
 
-	cout << endl;
-	//insert name into names[]
-	for (int i = size; i >= position; i--) {
-		names[i+1] = names[i];
-	}
-	names[position] = name;
-	//insert score into scores[]
-	for (int i = size; i >= position; i--) {
-		scores[i+1] = scores[i];
-	}
-	scores[position] = score;
-	//increment size count
-	size += 1;
+  cout << endl;
+  //insert name into names[]
+  for (int i = size; i >= position; i--)
+  {
+    names[i + 1] = names[i];
+  }
+  names[position] = name;
+  //insert score into scores[]
+  for (int i = size; i >= position; i--)
+  {
+    scores[i + 1] = scores[i];
+  }
+  scores[position] = score;
+  //increment size count
+  size += 1;
 }
 
 //description:	prints data to the user.
@@ -89,9 +90,9 @@ void insertData(string names[], double scores[], int& size) {
 //output:		array contents
 void printData(string names[], double scores[], int size)
 {
-	for (int i = 0; i < size; i++)
-	{
-		cout << setw(20) << left << names[i] << setw(10) << scores[i] << endl;
-	}
-	cout << endl;
+  for (int i = 0; i < size; i++)
+  {
+    cout << setw(20) << left << names[i] << setw(10) << scores[i] << endl;
+  }
+  cout << endl;
 }
