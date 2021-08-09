@@ -1,3 +1,19 @@
+
+//**********************************************************************
+// Author:		    Nathan Schrader
+// Assignment:	    #07 - File Input/Output
+// Date:		       August 8th, 2021
+// Description:	 Write program to open file, read in values, output data to console
+// Input:		    Day of the week, High temp, Low temp, Precipitation
+// Output:		  // High Temp
+                 // Low Temp
+                 // Avg High Temp
+                 // Avg Low Temp
+                 // Avg Precipitation
+// Sources:		    None
+//**********************************************************************
+
+
 #include <iostream>
 #include <fstream>
 #include <string>
